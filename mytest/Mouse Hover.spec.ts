@@ -5,7 +5,7 @@ import {webkit, chromium, firefox} from 'playwright'
 
 
 test('Mouse hover test', async() => {
-    const browser:Browser = await firefox.launch({headless: false});
+    const browser:Browser = await webkit.launch({headless: false});
     const page:Page = await browser.newPage();
     //test.setTimeout(10000)
     await page.goto("https://www.spicejet.com/");

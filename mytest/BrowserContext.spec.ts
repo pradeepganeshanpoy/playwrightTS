@@ -9,7 +9,7 @@ test('login test', async() => {
     //BrowserContext 1
     //BrowserContext is nothing but no of copies pages can open without signout/logout.
     //BrowserContext nale incognito tha open aagum.
-
+    
     const browserContext_1 : BrowserContext = await browser.newContext(); 
     const page1:Page = await browserContext_1.newPage();
 
@@ -21,7 +21,7 @@ test('login test', async() => {
 
     //BrowserContext 2
     const browserContext_2 : BrowserContext = await browser.newContext(); 
-    const page2:Page = await browserContext_2.newPage();  //ajithkumar@gmail.com ajith@123
+    const page2:Page = await browserContext_2.newPage();  //ajithkumar@gmail.com ajith@123 ..
 
     await page2.goto("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 

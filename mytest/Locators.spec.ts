@@ -15,7 +15,7 @@ test('locators test', async() => {
 
     //1.ID - Unique
 
-    const firstName:Locator = page.locator('id=input-firstname');
+    const firstName:Locator = page.locator('#input-firstname');
     const lastName:Locator = page.locator('id=input-lastname');
 
 

@@ -17,3 +17,29 @@ test('Double Click test', async() => {
     await page.waitForTimeout(5000);
 
 });
+
+
+test('New Tab', async()=> {
+
+    const browser:Browser = await chromium.launch({headless:false});
+    const context = await browser.newContext();
+    const page1:Page = await context.newPage();
+    const page2:Page = await context.newPage();
+
+    await page1.goto("https://playwright.dev/")
+
+    await page2.goto("https://stage.shriramgi.com/");
+
+   await page2.goBack();
+
+   const title = await page1.title();
+
+  console.log("Page 1 title is :", title);
+
+  
+
+
+
+
+
+});

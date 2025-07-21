@@ -15,7 +15,12 @@ test('Double Click test', async() => {
     //double click in mouse
     await page.getByText('Double-Click Me To See Alert').dblclick();
 
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(3000); 
+
+    page.on('dialog', async (dialog) => {
+    console.log('Dialog message:', dialog.message());
+    await dialog.accept();
+  });
 
     //right click or context click
     await page.getByText('right click me').click({button: 'right'});

@@ -5,6 +5,11 @@
 import {test, expect, Browser, Page, Locator, BrowserContext} from '@playwright/test'
 import {webkit, chromium, firefox} from 'playwright'
 
+//reason to give async and wait
+
+//No of promises, No od Asynchronus APIs, no of Asynchronus of steps are there so we need to give those keywords.
+
+//Simple async and await are used to handle the Asynchronus Api and Asynchronus Calls.
 
 test('AIRA Role locators test', async() => {
     //const browser:BrowserContext = await chromium.launchPersistentContext('', {headless: false}); //chrome
@@ -18,6 +23,7 @@ test('AIRA Role locators test', async() => {
    
     await page.locator('id=input-firstname').fill("Pradeep");
     await page.locator('id=input-lastname').fill("Kumar");
+    await page.screenshot({path: `screenshot.png`});
 
 
 });

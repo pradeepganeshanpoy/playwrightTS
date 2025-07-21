@@ -15,7 +15,7 @@ test('login test', async() => {
     const title = await page.title();
     console.log("Home Page title", title);
 
-    await page.screenshot({path: 'homepage.png'});
+    await page.screenshot({path: 'homepage2.png'});
 
     expect(title).toEqual('Account Login');
 

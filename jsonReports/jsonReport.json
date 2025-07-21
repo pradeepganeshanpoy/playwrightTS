@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\Workspace\\Playwright\\playwright.config.ts",
-    "rootDir": "D:/Workspace/Playwright/LetCodeWkousik",
+    "configFile": "C:\\Users\\HP\\playwrightTS\\playwright.config.ts",
+    "rootDir": "C:/Users/HP/playwrightTS/LetCodeWkousik",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 0
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -39,15 +37,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "D:/Workspace/Playwright/test-results",
+        "outputDir": "C:/Users/HP/playwrightTS/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 0
-        },
+        "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "D:/Workspace/Playwright/LetCodeWkousik",
+        "testDir": "C:/Users/HP/playwrightTS/LetCodeWkousik",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -55,15 +51,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "D:/Workspace/Playwright/test-results",
+        "outputDir": "C:/Users/HP/playwrightTS/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 0
-        },
+        "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "D:/Workspace/Playwright/LetCodeWkousik",
+        "testDir": "C:/Users/HP/playwrightTS/LetCodeWkousik",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -71,15 +65,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "D:/Workspace/Playwright/test-results",
+        "outputDir": "C:/Users/HP/playwrightTS/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 0
-        },
+        "metadata": {},
         "id": "webkit",
         "name": "webkit",
-        "testDir": "D:/Workspace/Playwright/LetCodeWkousik",
+        "testDir": "C:/Users/HP/playwrightTS/LetCodeWkousik",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -89,16 +81,21 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
-    "version": "1.51.1",
-    "workers": 1,
+    "updateSourceMethod": "patch",
+    "version": "1.54.1",
+    "workers": 4,
     "webServer": null
   },
   "suites": [],
-  "errors": [],
+  "errors": [
+    {
+      "message": "Error: No tests found",
+      "stack": "Error: No tests found"
+    }
+  ],
   "stats": {
-    "startTime": "2025-04-25T10:59:27.608Z",
-    "duration": 1879.896000000008,
+    "startTime": "2025-07-19T06:30:34.841Z",
+    "duration": 27.34400000000005,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,

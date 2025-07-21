@@ -10,7 +10,7 @@ test('chainning locators test', async() => {
     const browser:Browser = await firefox.launch({headless: false});
     const page:Page = await browser.newPage();
     //test.setTimeout(10000)
-    await page.goto("https://orangehrm.com/en/30-day-free-trial");
+    await page.goto("https://orangehrm.com/en/30-day-free-trial"); 
 
 /*     await page.locator('form#Form_getForm >> #Form_getForm_Name').fill("kumar");
 
