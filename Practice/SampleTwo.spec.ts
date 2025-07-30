@@ -50,12 +50,12 @@ test('Dropdown and radio button', async ({ page }) => {
     const Texttitle = await Texttitlelocator.textContent();
     console.log("Text Content : ", Texttitle);
 
-    //Link test
+    //Click the link
     const Link: Locator = await page.locator("a[href='http://www.artoftesting.com/sampleSiteForSelenium.html']");
 
     await Link.click();
 
-    //ENter the text with delay
+    //Enter the text with delay
     const Textfield = await page.locator('[name="firstName"]').type("AJITH KUMAR", { delay: 500 });
 
     //Just click the button
@@ -70,13 +70,14 @@ test('Dropdown and radio button', async ({ page }) => {
     const dbutton = await page.locator("#dblClkBtn").dblclick();
 
     //radio button 
-    await page.check("input#male");
+    await page.click("input#male");
 
    //check box
     const checkbox1 = await page.click("input.Automation");
 
     //Dropdown
     const Dropdown = await page.selectOption('select#testingDropdown', "Manual Testing");
+    console.log("The Selected Dropdown option is : ", Dropdown);
 
     //drag
     const drag = await page.locator("img#myImage");
