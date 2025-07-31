@@ -67,6 +67,7 @@ test('Element Practice', async () => {
 
     await newtab.close();
     await page.waitForTimeout(5000);
+    await page.waitForTimeout(5000);
 
 
 
