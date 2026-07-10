@@ -1,0 +1,40 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test tests/Rough.spec.js",
+    "test:headed": "npx playwright test",
+    "test:parallel": "npx playwright test --workers=9",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open"
+    
+  },
+  
+  "description": "End-to-end test automation framework using Playwright and JavaScript",
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e",
+    "javascript"
+  ],
+  "author": "Pradeep Kumar",
+  "private": true,
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.2",
+    "allure-commandline": "^2.36.0",
+    "allure-playwright": "^3.4.3",
+    "ortoni-report": "^4.0.4",
+    "playwright": "^1.57.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "winston": "^3.19.0"
+  }
+}

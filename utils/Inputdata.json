@@ -1,0 +1,44 @@
+{
+    "Test1": {
+        "fname": "Rohit",
+        "lname": "Sharma",
+        "Register_username": "rohitsharma",
+        "Register_password": "hitman@00045",
+        "name": "Rohit Pradeep",
+        "Practice_email": "rp01@gmail.com",
+        "mobile": "9020504086",
+        "dob": "2025-12-12",
+        "subjects": "Never Give up",
+        "address": "Balamurugan street, velacherry, Chennai",
+        "file": "test-data/files/images.jpg"
+    },
+    "Test2": {
+        "name": "Siva",
+        "password": "Siva@12345",
+        "email": "siva@gmail.com",
+        "message": "Well done Boys...",
+        "dropdownvalue": "yes",
+        "headingtext": "Form Fields ",
+        "HeadingContent": "Playwright"
+    },
+
+    "Test3": {
+        "Name": "Surya Kumar",
+        "EMail": "suryakumar@gmail.com",
+        "Phone": "9874524250",
+        "Address": "No.3 Balamurugan street",
+        "Country": "india",
+        "Color": "blue",
+        "Animal": "cheetah",
+        "Dob": "02/22/2000",
+        "uiDate": {
+            "year": 2026,
+            "month": 1,
+            "date": 22
+        },
+        "StartDate": "2026-02-22",
+        "EndDate": "2030-02-22"
+    }
+     
+    
+}
